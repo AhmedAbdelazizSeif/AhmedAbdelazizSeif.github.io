@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <title>Home - Ahmed Seif</title>
     <meta name="description" content="This is the official blog for Ahmed Seif, an Egyptian freelancer and Data Analyst">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,239 +15,230 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Ahmed Seif</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Ahmed Seif</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+                                                                                                            aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cert">Certificates</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
+        <div class="container outside" style="width:50%; box-sizing: border-box;  clip-path: circle(); position: relative"><img class="img-fluid d-block mx-auto mb-5 inside" id="personal" src="assets/img/personal.png"></div>
+        <h1>Ahmed Seif</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Data Analyst</h2>
+    </div>
+</header>
+<section id="about" class=" text-secondary mb-0">
+    <div class="container">
+        <h2 class="text-uppercase text-center">About</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead">An Egyptian computer science student. Interested into Data Science, Web Development and Android Development. A junior Laravel developer and a data analyst, keeping track of self-learning to cover the Data field and having some knowledge
+                    working with Flutter.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead">Whether you're a company looking forward hiring, a professional looking for a project teammate, or an individual looking for a freelancer to finish your job, You're at the right place</p>
+            </div>
+        </div>
+        <div class="text-center mt-4"></div>
+    </div>
+</section>
+<section id="portfolio" class="portfolio bg-primary text-white text-center">
+    <div class="container text-center">
+        <h2 class="text-uppercase text-center">Portfolio</h2>
+        <hr class="star-light mb-5">
+        <div class="row justify-content-around">
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item text-white" data-toggle="modal" href="#portfolio-modal-1">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: #2c3e5090">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid myporto" src="assets/img/portfolio/dataset-card.jpg">
+                    <label>Kaggle's Doctor Appointments</label>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item text-white" data-toggle="modal" href="#portfolio-modal-2">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: #2c3e5090">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                    </div><img class="img-fluid myporto" src="assets/img/portfolio/mountain-bike-vector_25327-100.jpg">
+                    <label>US Bikeshare</label>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item text-white" data-toggle="modal" href="#portfolio-modal-3">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: #2c3e5090">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                    </div><img class="img-fluid myporto" src="assets/img/portfolio/ab-testing.png">
+                    <label>A/B Testing</label>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item text-white" data-toggle="modal" href="#portfolio-modal-4">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: #2c3e5090">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                    </div><img class="img-fluid myporto" src="assets/img/portfolio/ford-gobike-logo.png">
+                    <label>Ford GoBike Data Visualizations</label>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="cert" class="portfolio text-center text-secondary mb-0">
+    <div class="container text-center">
+        <h2 class="text-uppercase text-center">Certificates</h2>
+        <hr class="star-dark mb-5">
+        <div class="row justify-content-around">
+        <div class="col-md-6 col-lg-4">
+            <a class="d-block mx-auto portfolio-item" href="https://graduation.udacity.com/confirm/RUGHNCFE">
+                <img class="img-fluid" src="assets/img/Cert/29101d36-4545-4e10-a5ae-540646022970.svg">
+                <label>Advanced Data Analysis</label>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <a class="d-block mx-auto portfolio-item" href="https://graduation.udacity.com/confirm/L6WRP7KF">
+                <img class="img-fluid" src="assets/img/Cert/9634a7ba-4590-4ec9-a4b0-6dc040bc5447.svg">
+                <label>Professional Data Analysis</label>
+            </a>
+        </div>
+        </div>
+    </div>
+</section>
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p>1 El Madinna El Monawarra<br>Alexandria, EG 21614</p>
+            </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase">Around the Web</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.facebook.com/AhmedAbdelazizSeif"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.linkedin.com/in/ahmedabdelazizseif/"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://twitter.com/AhmedSeif918"><i class="fa fa-twitter fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://github.com/AhmedAbdelazizSeif"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" id="personal" src="assets/img/personal.png" style="width: 50%;clip-path: circle();!important">
-            <h1>Ahmed Seif</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Data Analyst | Web Developer | Android Developer</h2>
-        </div>
-    </header>
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
-            <hr class="star-dark mb-5">
-            <div class="row justify-content-around">
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid myporto" src="assets/img/dataset-card_vectorized.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid myporto" src="assets/img/bikesharepanel-veo_vectorized.png"></a>
-                </div>
+            <div class="col-md-4">
+                <h4 class="text-uppercase mb-4">About Me</h4>
+                <p class="lead mb-0"><span>Email:&nbsp;<a href="mailto:ahmed.am.seif@gmail.com">ahmed.am.seif@gmail.com</a><br>Phone Number:&nbsp;<a href="tel:+20120302131">+201203021321</a><br></span></p>
             </div>
         </div>
-    </section>
-    <section id="about" class="bg-primary text-white mb-0">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">About</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">An Egyptian computer science student. Interested into Data Science, Web Development and Android Development. A junior Laravel developer and a data analyst, keeping track of self-learning to cover the Data field and having some knowledge
-                        working with Flutter.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">Whether you're a company looking forward hiring, a professional looking for a project teammate, or an individual looking for a freelancer to finish your job, You're at the right place</p>
-                </div>
-            </div>
-            <div class="text-center mt-4"></div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p>1 El Madinna El Monawarra<br>Alexandria, EG 21614</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Around the Web</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.facebook.com/AhmedAbdelazizSeif"><i class="fa fa-facebook fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.linkedin.com/in/ahmedabdelazizseif/"><i class="fa fa-linkedin fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://twitter.com/AhmedSeif918"><i class="fa fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://github.com/AhmedAbdelazizSeif"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Me</h4>
-                    <p class="lead mb-0"><span>Email:&nbsp;<a href="mailto:ahmed.am.seif@gmail.com">ahmed.am.seif@gmail.com</a><br>Phone Number:&nbsp;<a href="tel:+20120302131">+201203021321</a><br></span></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright ©&nbsp;Ahmed Seif 2021</small></div>
     </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Kaggle's no show appointemnts</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/dataset-card.jpg">
-                                <p class="mb-5">This project is based on the '<a href="https://www.kaggle.com/joniarroba/noshowappointments">noshowappointments-kagglev2-may-2016.csv</a>' file that showed a number of patients that didn't show up at their doctors appointments
-                                    in Brazil<br><button class="btn btn-dark rounded-pill" type="submit">GitHub Code</button></p>
-                            </div>
+</footer>
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright ©&nbsp;Ahmed Seif 2021</small></div>
+</div>
+<div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Kaggle's no show appointemnts</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/dataset-card.jpg">
+                            <p class="mb-5">This project is based on the '<a href="https://www.kaggle.com/joniarroba/noshowappointments">noshowappointments-kagglev2-may-2016.csv</a>' file that showed a number of patients that didn't show up at their doctors appointments
+                                in Brazil<br></p>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/AhmedAbdelazizSeif/Kaggle-eda-no-shows-at-brazil-medical-appointments"><i class="fa fa-close"></i>&nbsp;Go To Project</a></div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Us Bikeshare in 3 big cities</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/divvy.jpg">
-                                <p class="mb-5">Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world. Bicycle-sharing systems allow users to rent bicycles on a very short-term basis for a price. This allows
-                                    people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to just go for a ride. Regardless, each bike can serve several users per day.<br>This
-                                    Project was to filterate Bikeshare data to analyze it in three big cities; Washington, New York City and Chicago:<br><button class="btn btn-dark rounded-pill" type="button">GitHub Code</button></p>
-                            </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Us Bikeshare in 3 big cities</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/divvy.jpg">
+                            <p class="mb-5">Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world. Bicycle-sharing systems allow users to rent bicycles on a very short-term basis for a price. This allows
+                                people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to just go for a ride. Regardless, each bike can serve several users per day.<br>This
+                                Project was to filterate Bikeshare data to analyze it in three big cities; Washington, New York City and Chicago:<br></p>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/AhmedAbdelazizSeif/US-Bikeshare-Project-Python-Data-Analysis"><i class="arrow"></i>&nbsp;Go To Project</a></div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                            </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">A/B Testing</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/ab-testing.png">
+                            <p class="mb-5">A website that was launching a new page needed to know the effect of changing their layout on users using practical analysis and A/B Testing,
+
+                                On this project, I worked on many procedures to find an answer for the question as follows:
+                                <ul>
+                                    <li>Probability distributions throughout the users database and how it was affected by the change</li>
+                            <li>Hypothesis Testing</li>
+                            <li>    Regression Analysis</li>
+                                </ul>
+                                Finally, I reached out that there's not a real impact of the layout change so the suggested decision is to stay on the old layout.</p>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/AhmedAbdelazizSeif/AB-Testing-Udacity-Practical-Statistics-Project"><i class="fa fa-close"></i>&nbsp;Go To Project</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                            </div>
+</div>
+
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Ford GoBike Data Visualizations</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/ford-gobike-squarelogo-1531868183142.png">
+
+                            <p>This dataset is supposed to be for bikeshare in Feb 2019 with 16 rows explaining each bikeshare event by users. Mainly in this project, I discussed reasons affecting each of the following:<br></p>
+                            <ul>
+                                <li>Why people might not use the bikeshare for their whole trip</li>
+                                <li>Crowded Stations around the state mentioned in the dataset</li>
+                                <li>Ages using bikeshare systems</li>
+                                <li>Peak Times when people use to bikeshare</li>
+                                <li>Gender affection on different criteria over the dataset</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/AhmedAbdelazizSeif/Ford-GoBike-Data-Visualization"><i class="fa fa-close"></i>Go To Project</a></div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
