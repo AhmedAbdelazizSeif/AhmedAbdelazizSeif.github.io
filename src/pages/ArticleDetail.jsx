@@ -1,5 +1,5 @@
 // frontend/src/pages/SingleArticlePage.jsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism.css';

@@ -1,4 +1,7 @@
-import React from 'react';
+
+
+import PropTypes from "prop-types";
+
 import styles from '../styles/Titlebar.module.css';
 
 const Titlebar = () => {
@@ -20,7 +23,7 @@ const Titlebar = () => {
         <p>Terminal</p>
         <p>Help</p>
       </div>
-      <p className={styles.title}>Ahmed Abdelaziz Seif - Visual Studio Code</p>
+      <p className={styles.title}>Ahmed Abdelaziz Seif</p>
       <div className={styles.windowButtons}>
         <span className={styles.minimize}></span>
         <span className={styles.maximize}></span>
@@ -29,5 +32,7 @@ const Titlebar = () => {
     </section>
   );
 };
+
+Titlebar.propTypes = {};
 
 export default Titlebar;

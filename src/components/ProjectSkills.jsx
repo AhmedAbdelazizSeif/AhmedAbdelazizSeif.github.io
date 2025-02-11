@@ -1,4 +1,7 @@
-import React from 'react';
+
+
+import PropTypes from "prop-types";
+
 
 const ProjectSkills = ({ skills }) => {
   return (
@@ -24,6 +27,10 @@ const ProjectSkills = ({ skills }) => {
       </div>
     </div>
   );
+};
+
+ProjectSkills.propTypes = {
+  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectSkills;

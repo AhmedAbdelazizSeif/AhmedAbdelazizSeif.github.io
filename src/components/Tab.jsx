@@ -1,4 +1,7 @@
-import React from 'react';
+
+
+import PropTypes from "prop-types";
+
 import { Link, useLocation } from 'react-router-dom';
 import styles from '../styles/Tab.module.css';
 
@@ -17,6 +20,12 @@ const Tab = ({ icon, filename, path }) => {
       </div>
     </Link>
   );
+};
+
+Tab.propTypes = {
+  icon: PropTypes.string.isRequired,
+  filename: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
 };
 
 export default Tab;

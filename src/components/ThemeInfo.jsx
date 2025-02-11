@@ -1,4 +1,7 @@
-import React from 'react';
+
+
+import PropTypes from "prop-types";
+
 import styles from '../styles/ThemeInfo.module.css';
 
 const ThemeInfo = ({ icon, name, publisher, theme }) => {
@@ -19,6 +22,13 @@ const ThemeInfo = ({ icon, name, publisher, theme }) => {
       </div>
     </div>
   );
+};
+
+ThemeInfo.propTypes = {
+  icon: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  publisher: PropTypes.string.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 
 export default ThemeInfo;

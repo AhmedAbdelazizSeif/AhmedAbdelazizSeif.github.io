@@ -1,5 +1,5 @@
 // src/pages/Certifications.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Certifications.module.css';
 
 const Certifications = () => {
