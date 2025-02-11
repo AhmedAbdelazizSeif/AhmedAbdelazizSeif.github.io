@@ -1,6 +1,11 @@
-const { SitemapStream, streamToPromise } = require("sitemap");
-const fs = require("fs");
-const path = require("path");
+import { SitemapStream } from "sitemap";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // List of static pages
 const pages = [
@@ -15,7 +20,7 @@ const pages = [
 
 // Generate sitemap
 const generateSitemap = async () => {
-  const stream = new SitemapStream({ hostname: "https://ahmed-seif.me" }); // Replace with your actual domain
+  const stream = new SitemapStream({ hostname: "https://ahmed-seif.me" });
 
   try {
     // Ensure the docs directory exists
@@ -25,24 +30,32 @@ const generateSitemap = async () => {
     }
 
     // Generate sitemap.xml
-    const data = await streamToPromise(
-      pages.map(page => stream.write(page))
-    );
-    fs.writeFileSync(path.join(docsDir, 'sitemap.xml'), data.toString());
+    const sitemapData = [];
+    for (const page of pages) {
+      stream.write(page);
+    }
+    stream.end();
+
+    const data = await new Promise((resolve, reject) => {
+      const chunks = [];
+      stream.on('data', chunk => chunks.push(chunk));
+      stream.on('end', () => resolve(Buffer.concat(chunks).toString()));
+      stream.on('error', reject);
+    });
+
+    fs.writeFileSync(path.join(docsDir, 'sitemap.xml'), data);
     console.log("✅ Sitemap generated!");
 
     // Generate robots.txt
     const robotsTxt = `User-agent: *
 Allow: /
-Sitemap: https://ahmed-seif.me/sitemap.xml`; // Replace with your actual domain
+Sitemap: https://ahmed-seif.me/sitemap.xml`;
 
     fs.writeFileSync(path.join(docsDir, 'robots.txt'), robotsTxt);
     console.log("✅ Robots.txt generated!");
   } catch (error) {
     console.error("Error generating files:", error);
     process.exit(1);
-  } finally {
-    stream.end();
   }
 };
 
