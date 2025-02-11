@@ -1,11 +1,15 @@
-import { SitemapStream } from "sitemap";
+import { SitemapStream, streamToPromise } from "sitemap";
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+// Use an environment variable for the hostname if provided,
+// otherwise default to the production URL.
+const hostname = process.env.HOSTNAME || "https://ahmed-seif.me";
 
 // List of static pages
 const pages = [
@@ -18,40 +22,31 @@ const pages = [
   { url: "/certifications", changefreq: "monthly", priority: 0.7 },
 ];
 
-// Generate sitemap
 const generateSitemap = async () => {
-  const stream = new SitemapStream({ hostname: "https://ahmed-seif.me" });
+  const stream = new SitemapStream({ hostname });
+
+  // Ensure the docs directory exists (this is where your generated files go)
+  const docsDir = path.join(process.cwd(), "docs");
+  if (!fs.existsSync(docsDir)) {
+    fs.mkdirSync(docsDir, { recursive: true });
+  }
 
   try {
-    // Ensure the docs directory exists
-    const docsDir = path.join(process.cwd(), 'docs');
-    if (!fs.existsSync(docsDir)) {
-      fs.mkdirSync(docsDir, { recursive: true });
-    }
-
-    // Generate sitemap.xml
-    const sitemapData = [];
-    for (const page of pages) {
-      stream.write(page);
-    }
+    // Add each page to the sitemap stream
+    pages.forEach((page) => stream.write(page));
     stream.end();
 
-    const data = await new Promise((resolve, reject) => {
-      const chunks = [];
-      stream.on('data', chunk => chunks.push(chunk));
-      stream.on('end', () => resolve(Buffer.concat(chunks).toString()));
-      stream.on('error', reject);
-    });
-
-    fs.writeFileSync(path.join(docsDir, 'sitemap.xml'), data);
+    // Use streamToPromise to wait for the stream to finish
+    const data = await streamToPromise(stream);
+    fs.writeFileSync(path.join(docsDir, "sitemap.xml"), data.toString());
     console.log("✅ Sitemap generated!");
 
-    // Generate robots.txt
+    // Generate robots.txt using the same hostname
     const robotsTxt = `User-agent: *
 Allow: /
-Sitemap: https://ahmed-seif.me/sitemap.xml`;
+Sitemap: ${hostname}/sitemap.xml`;
 
-    fs.writeFileSync(path.join(docsDir, 'robots.txt'), robotsTxt);
+    fs.writeFileSync(path.join(docsDir, "robots.txt"), robotsTxt);
     console.log("✅ Robots.txt generated!");
   } catch (error) {
     console.error("Error generating files:", error);
