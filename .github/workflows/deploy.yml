@@ -33,9 +33,9 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Set the HOSTNAME environment variable (adjust as needed)
-      - name: Generate Sitemap and Robots.txt
-        run: HOSTNAME=https://ahmed-seif.me npm run generate-sitemap
+      # # Set the HOSTNAME environment variable (adjust as needed)
+      # - name: Generate Sitemap and Robots.txt
+      #   run: HOSTNAME=https://ahmed-seif.me npm run generate-sitemap
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
